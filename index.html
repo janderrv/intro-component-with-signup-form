@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <section class="text-section">
+          <h1 class="title">Learn to code by watching others</h1>
+          <p class="text">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </section>
+        <section class="form">
+          <div class="trybutton">
+            <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+          </div>
+          <form class="singup" action="#">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First Name"
+            />
+            <div class="checkFirstName">
+              <img
+                src="/images/icon-error.svg"
+                alt="First name cannot be empty"
+              />
+              <p>First name cannot be empty</p>
+            </div>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+            />
+            <div class="checkLastName">
+              <img
+                src="/images/icon-error.svg"
+                alt="Last name cannot be empty"
+              />
+              <p>Last name cannot be empty</p>
+            </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <div class="checkEmail">
+              <img src="/images/icon-error.svg" alt="Email cannot be empty" />
+              <p id="emailWarning">Email cannot be empty</p>
+            </div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <div class="checkPassword">
+              <img
+                src="/images/icon-error.svg"
+                alt="Password cannot be empty"
+              />
+              <p>Password cannot be empty</p>
+            </div>
+            <button id="claim" type="button" onclick="clain()">
+              Claim your free trial
+            </button>
+            <span id="terms-services"
+              >By clicking the button, you are agreeing to our
+              <b id="terms">Terms and Services</b></span
+            >
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
