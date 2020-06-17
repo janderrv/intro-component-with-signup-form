@@ -177,3 +177,65 @@ span {
 .error {
   display: block;
 }
+
+@media (max-width: 370px) {
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+  .text-section {
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+  .title {
+    font-size: 2rem;
+    align-self: center;
+    max-width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  .trybutton {
+    text-align: center;
+    line-height: 2rem;
+    padding: 2%;
+  }
+  .checkFirstName img {
+    right: -170px;
+    top: -30px;
+  }
+
+  .checkLastName img {
+    right: -170px;
+    top: -30px;
+  }
+
+  .checkEmail img {
+    right: -156px;
+    top: -30px;
+  }
+  .checkPassword img {
+    right: -170px;
+    top: -30px;
+  }
+  .checkFirstName p {
+    top: -25px;
+    left: 45px;
+  }
+  .checkLastName p {
+    top: -25px;
+    left: 45px;
+  }
+  .checkEmail p {
+    top: -25px;
+    left: 60px;
+  }
+  .checkPassword p {
+    top: -25px;
+    left: 50px;
+  }
+}
